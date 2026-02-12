@@ -1,0 +1,169 @@
+*{
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+
+
+
+body{
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #F2F4F3;
+  color: #0A0908;
+  font-size: large;
+}
+
+header h1{
+  padding-top: 35px;
+  color: #A9927D;
+}
+
+h2{
+  color: #84715E;
+}
+
+h3{
+  color: #5E503F;
+}
+
+
+
+
+/*Nav Bar*/
+
+nav {
+  position: fixed;
+  top: 0;
+  max-width: 1000px;
+  width: 100%;
+}
+
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  display: flex;
+  padding: 0; /*This is here because I was getting 40 padding on the left of the element for some reason I couldn't figure out why though*/
+}
+
+nav li{
+  /*Ensures that each flex item takes up the same amount of space in the container.*/
+  flex: 1;  
+}
+
+nav a{
+  background-color: #22333B;
+  color: #F2F4F3;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+}
+
+nav a:hover{
+  background-color: #8A9497;
+
+}
+
+
+/*About me section*/
+.bio-content {
+  display: flow-root;
+}
+
+.bio-content .image {
+  float: right;
+}
+
+img#headshot{
+  max-width: 14em;
+  max-height: 14em;
+  border-radius: 50%;
+}
+
+
+
+/*Education and experience*/
+
+.Experience-timeline{
+  display: flex;
+  flex-flow: column;
+}
+
+.timeline-item{
+  background-color: #EFF1F1;
+  border: 3px solid #8A9497;
+  border-radius: 15px;
+  margin: 10px;
+  padding: 8px;
+}
+
+
+.timeline-item-info{
+  font-size: 0.85em;
+  color: #4a4d4e;
+}
+
+
+/*Groups section*/
+
+.Cayley-table{
+  table-layout: fixed;
+  border-collapse: collapse;
+  margin: 30px;
+}
+
+
+.Cayley-table td, .Cayley-table tr, .Cayley-table th{
+  border: 2px solid black;
+  padding: 0.6em;
+}
+
+
+
+
+tr:nth-child(odd) {
+  background-color: #eeeeee;
+}
+
+
+fieldset.multi-choice {
+  display: flex;
+  flex-flow: column;
+}
+
+fieldset.multi-choice legend, fieldset.multi-choice label, fieldset.multi-choice button{
+  padding: 10px;
+}
+
+/*Footer styles*/
+
+footer {
+  background-color: #22333B;
+  color: #F2F4F3;
+}
+
+footer p{
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+div.socials {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+img.social-image{
+  max-width: 2em;
+  max-height: 2em;
+}
+
+div.socials a{
+  padding: 10px;
+}

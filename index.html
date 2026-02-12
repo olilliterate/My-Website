@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en-uk">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="styles/style.css" rel="stylesheet">
+        <title>Oliver Bjergfelt</title>
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico"/>   
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Deca&display=swap" rel="stylesheet"> 
+    </head>
+    <body>
+
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html#hello">About Me</a></li>
+                <li><a href="index.html#experience">My Education And Experience</a></li>
+                <li><a href="index.html#groups">A Short Look At Groups</a></li>
+            </ul>
+        </nav>
+        <h1>Welcome to my website 😊</h1>
+    </header>
+    
+    
+
+    <!--About myself-->
+    
+    <section class="Mission-statement" id="hello">
+        <div class="bio-content">
+
+
+            <h2>About Me</h2>
+            <div class="image"><img src="images/graduation-photo.jpg" alt="A photo of me!" id="headshot"/></div>
+            <p>Hello I'm Oliver. I graduated from Cardiff University with my degree in mathematics in the summer of 2025. I have spent the time from then volunteering. I enjoy using computer systems to help break down and inform solutions to complex problems. </p>
+            <p>My hobbies include:</p>
+            <ul>
+                <li>Tabletop games</li>
+                <li>Hiking</li>
+                <li>Computers</li>
+            </ul>
+            <p>I'm absolutely thrilled to be joining the McCarthy Cohort at La Fosse Academy. I'm looking forward to meeting you all on the 23rd of February!</p>
+        
+        
+        </div>
+    </section>
+
+    <!--My education and experience-->
+    <section id="experience" class="Experience-section">
+        <h2>My education and experience</h2>
+        <div class="Experience-timeline">
+            <div class="timeline-item">
+                <h3>Volunteer</h3>
+                <p class="timeline-item-info"> St Peters Hospice Nailsea, Nailsea | Aug 2025 - Feb 2026</p>
+                <ul>
+                    <li>Maintained presentation and organization of the shop floor, creating a welcoming environment for customers</li>
+                    <li>Handled card and cash payments swiftly while providing a friendly, professional service</li>
+                    <li>Processed donations with care while encouraging donors to sign up for Gift Aid</li>
+                </ul>
+            </div>
+            <div class="timeline-item">
+                <h3>Bachelor of Mathematics</h3>
+                <p class="timeline-item-info">Cardiff University, Cardiff, United Kingdom | Sep 2022 - Jun 2025</p>
+                <p><strong>Grade:</strong> First Class Honours</p>
+                <p><strong>Extracurricular activities:</strong></p>
+                <ul>
+                    <li>Student Representative | 2023 - 2025 | Worked with other representatives to maintain a feedback loop between the student body and the School of Mathematics</li>
+                    <li>Treasurer for the CRIT society | 2024 - 2025 | Responsible for creating the annual budget and performing financial reconciliations for the society</li>
+                </ul>
+            </div>
+            <div class="timeline-item">
+                <h3>Cafeteria supervisor</h3>
+                <p class="timeline-item-info"> Backwell School, Bristol, United Kingdom | Sept 2021 - May 2022</p>
+                <ul>
+                    <li>Maintained cleanliness of a secondary school cafeteria every break-time and lunchtime</li>
+                    <li>Encouraged good behaviour in students while queuing and dining in the room</li>
+                    <li>Demonstrated excellent time management by balancing with the part time work with full time study</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <!--Groups section-->
+    <section id="groups">
+        <h2>A Short Look At Groups</h2>
+        <p>The next section is about an algebraic structure called groups. This isn't something you need to read and is purely here to demonstrate I can implement and style hyperlinks, tables and forms.</p>
+        <h3>Definition of a group</h3>
+        <p>A group is a type of algebraic structure. It is made up of a <a href="https://en.wikipedia.org/wiki/Set_(mathematics)" target="_blank">set S (a collection of objects)</a>, <a href="https://en.wikipedia.org/wiki/Binary_operation" target="_blank">a binary operation</a> &#8728, and must follow these three axioms</p>
+        <ol>
+            <li>Elements of the set must be <a href="https://en.wikipedia.org/wiki/Associative_property" target="_blank">associative</a> under the binary operation</li>
+            <li>There exists an element <i>i</i> in the set <i>S</i> such that for all elements <i>s</i> in the set <i>S</i> this statement holds: <i>s &#8728 i = s = i &#8728 s</i>. We call the element <i>i</i> the identity element </li>
+            <li>For all elements <i>s</i> in the set <i>S</i> there exists an element <i>s<sup >-1</sup></i> belonging to <i>S</i> such that the following statement holds: <i>s &#8728 s<sup>-1</sup> = i = s<sup>-1</sup> &#8728 s</i>. We call the element <i>s<sup>-1</sup></i> the inverse element of <i>s</i></li>
+        </ol>
+
+        <p>The definition I have just given might sound confusing however a quick example should show you that groups are actually quite simple.</p>
+
+        <h3>A quick example of a group</h3>
+        <p>For this group we will use the set <i>{..., -2, -1, 0, 1, 2, ...}</i> i.e. the integers and the binary operation of addition. Does this satisfies the three axioms? </p>
+        <ol>
+            <li>As you all know for any three real numbers <i>x, y, z</i> addition is associative: (x + y) + z = x + (y + z)</li>
+            <li>The integer that satisfies the second axiom is <i>0</i>. Take any integer <i>x</i> then <i>x + 0 = x = 0 + x</i>. Hence <i>0</i> is the identity element</li>
+            <li>Take an integer <i>a</i> then its inverse element is <i>-a</i></li>
+        </ol>
+        Hence the integers and addition for a group.
+        
+        <h3>Another example of a group</h3>
+        <p>For this example we will be studying a finite group. The set is integers <a href="https://en.wikipedia.org/wiki/Modulo" target="_blank">modulo</a> 3 with the binary operation being addition. As our example only exists of three elements we describe the structure of the group using a Cayley table.</p>
+
+        <div>
+        Below is the Cayley table of the group (Integers MOD 3, +)
+        <table class="Cayley-table">
+            <tr>
+                <th>+</th>
+                <th>0 (MOD 3)</th>
+                <th>1 (MOD 3)</th>
+                <th>2 (MOD 3)</th>
+            </tr>
+            <tr>
+                <th> 0 (MOD 3)</th>
+                <td> 0 (MOD 3)</td>
+                <td> 1 (MOD 3)</td>
+                <td> 2 (MOD 3)</td>
+            </tr>
+            <tr>
+                <th> 1 (MOD 3)</th>
+                <td> 1 (MOD 3)</td>
+                <td> 2 (MOD 3)</td>
+                <td> 0 (MOD 3)</td>
+            </tr>
+            <tr>
+                <th> 2 (MOD 3)</th>
+                <td> 2 (MOD 3)</td>
+                <td> 0 (MOD 3)</td>
+                <td> 1 (MOD 3)</td>
+            </tr>
+        </table>
+
+        <p>Now some simple question: (not written the JavaScript for this yet)</p>
+        <form method="get">
+            <fieldset class="multi-choice">
+                <legend>What is the inverse element of 0 (MOD 3)?</legend>
+                <label><input type="radio" name="radio" value="0">0 (MOD 3)</label>
+                <label><input type="radio" name="radio" value="1">1 (MOD 3)</label>
+                <label><input type="radio" name="radio" value="2">2 (MOD 3)</label>
+                <button>Submit</button>
+            </fieldset>
+
+        </form>
+        </div>
+        
+    </section>    
+
+    <p>Thank you for reading my webpage! </p>
+        
+    <footer>
+        <p>Below are some various places you can find me!</p>
+        <div class="socials">
+            <a href="https://github.com/olilliterate" target="_blank">
+                <img src="images/GitHub_Invertocat_White.png" class="social-image"/>
+            </a>
+            <a href="https://linkedin.com/in/oliver-b-70baa036b" target="_blank" >
+                <img src="images/linkedin-white-icon.png" class="social-image"/>
+            </a>
+            <a href="mailto:lafosse@oliver.bjerg.co.uk" target="_blank">
+                <img src="images/white-email-icon-circle-background.png" class="social-image"/>
+            </a>
+        </div>
+    </footer>
+    </body>
+</html>
