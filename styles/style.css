@@ -75,7 +75,7 @@ nav a:hover{
   display: flow-root;
 }
 
-.bio-content .image {
+.Mission-statement .image {
   float: right;
 }
 
@@ -166,4 +166,22 @@ img.social-image{
 
 div.socials a{
   padding: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .main-text {
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+
+  section.Mission-statement {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+
+  header h1{
+    padding-top: 70px;
+  }
+
 }

@@ -19,7 +19,7 @@
                 <li><a href="index.html#groups">A Short Look At Groups</a></li>
             </ul>
         </nav>
-        <h1>Welcome to my website 😊</h1>
+        <h1 class="main-text">Welcome to my website 😊</h1>
     </header>
     
     
@@ -27,19 +27,19 @@
     <!--About myself-->
     
     <section class="Mission-statement" id="hello">
+        <div class="image"><img src="images/graduation-photo.jpg" alt="A photo of me!" id="headshot"/></div>
+
         <div class="bio-content">
 
-
-            <h2>About Me</h2>
-            <div class="image"><img src="images/graduation-photo.jpg" alt="A photo of me!" id="headshot"/></div>
-            <p>Hello I'm Oliver. I graduated from Cardiff University with my degree in mathematics in the summer of 2025. I have spent the time from then volunteering. I enjoy using computer systems to help break down and inform solutions to complex problems. </p>
-            <p>My hobbies include:</p>
-            <ul>
+            <h2 class="main-text">About Me</h2>
+            <p class="main-text">Hello I'm Oliver. I graduated from Cardiff University with my degree in mathematics in the summer of 2025. I have spent the time from then volunteering. I enjoy using computer systems to help break down and inform solutions to complex problems. </p>
+            <p class="main-text">My hobbies include:</p>
+            <ul class="main-text">
                 <li>Tabletop games</li>
                 <li>Hiking</li>
                 <li>Computers</li>
             </ul>
-            <p>I'm absolutely thrilled to be joining the McCarthy Cohort at La Fosse Academy. I'm looking forward to meeting you all on the 23rd of February!</p>
+            <p class="main-text">I'm absolutely thrilled to be joining the McCarthy Cohort at La Fosse Academy. I'm looking forward to meeting you all on the 23rd of February!</p>
         
         
         </div>
@@ -47,7 +47,7 @@
 
     <!--My education and experience-->
     <section id="experience" class="Experience-section">
-        <h2>My education and experience</h2>
+        <h2 class="main-text">My education and experience</h2>
         <div class="Experience-timeline">
             <div class="timeline-item">
                 <h3>Volunteer</h3>
@@ -84,32 +84,32 @@
 
     <!--Groups section-->
     <section id="groups">
-        <h2>A Short Look At Groups</h2>
-        <p>The next section is about an algebraic structure called groups. This isn't something you need to read and is purely here to demonstrate I can implement and style hyperlinks, tables and forms.</p>
-        <h3>Definition of a group</h3>
-        <p>A group is a type of algebraic structure. It is made up of a <a href="https://en.wikipedia.org/wiki/Set_(mathematics)" target="_blank">set S (a collection of objects)</a>, <a href="https://en.wikipedia.org/wiki/Binary_operation" target="_blank">a binary operation</a> &#8728, and must follow these three axioms</p>
-        <ol>
+        <h2 class="main-text">A Short Look At Groups</h2>
+        <p class="main-text">The next section is about an algebraic structure called groups. This isn't something you need to read and is purely here to demonstrate I can implement and style hyperlinks, tables and forms.</p>
+        <h3 class="main-text">Definition of a group</h3>
+        <p class="main-text">A group is a type of algebraic structure. It is made up of a <a href="https://en.wikipedia.org/wiki/Set_(mathematics)" target="_blank">set S (a collection of objects)</a>, <a href="https://en.wikipedia.org/wiki/Binary_operation" target="_blank">a binary operation</a> &#8728, and must follow these three axioms</p>
+        <ol class="main-text">
             <li>Elements of the set must be <a href="https://en.wikipedia.org/wiki/Associative_property" target="_blank">associative</a> under the binary operation</li>
             <li>There exists an element <i>i</i> in the set <i>S</i> such that for all elements <i>s</i> in the set <i>S</i> this statement holds: <i>s &#8728 i = s = i &#8728 s</i>. We call the element <i>i</i> the identity element </li>
             <li>For all elements <i>s</i> in the set <i>S</i> there exists an element <i>s<sup >-1</sup></i> belonging to <i>S</i> such that the following statement holds: <i>s &#8728 s<sup>-1</sup> = i = s<sup>-1</sup> &#8728 s</i>. We call the element <i>s<sup>-1</sup></i> the inverse element of <i>s</i></li>
         </ol>
 
-        <p>The definition I have just given might sound confusing however a quick example should show you that groups are actually quite simple.</p>
+        <p class="main-text">The definition I have just given might sound confusing however a quick example should show you that groups are actually quite simple.</p>
 
-        <h3>A quick example of a group</h3>
-        <p>For this group we will use the set <i>{..., -2, -1, 0, 1, 2, ...}</i> i.e. the integers and the binary operation of addition. Does this satisfies the three axioms? </p>
-        <ol>
+        <h3 class="main-text">A quick example of a group</h3>
+        <p class="main-text">For this group we will use the set <i>{..., -2, -1, 0, 1, 2, ...}</i> i.e. the integers and the binary operation of addition. Does this satisfies the three axioms? </p>
+        <ol class="main-text">
             <li>As you all know for any three real numbers <i>x, y, z</i> addition is associative: (x + y) + z = x + (y + z)</li>
             <li>The integer that satisfies the second axiom is <i>0</i>. Take any integer <i>x</i> then <i>x + 0 = x = 0 + x</i>. Hence <i>0</i> is the identity element</li>
             <li>Take an integer <i>a</i> then its inverse element is <i>-a</i></li>
         </ol>
-        Hence the integers and addition for a group.
+        <p class="main-text">Hence the integers and addition for a group.</p>
         
-        <h3>Another example of a group</h3>
-        <p>For this example we will be studying a finite group. The set is integers <a href="https://en.wikipedia.org/wiki/Modulo" target="_blank">modulo</a> 3 with the binary operation being addition. As our example only exists of three elements we describe the structure of the group using a Cayley table.</p>
+        <h3 class="main-text">Another example of a group</h3>
+        <p class="main-text">For this example we will be studying a finite group. The set is integers <a href="https://en.wikipedia.org/wiki/Modulo" target="_blank">modulo</a> 3 with the binary operation being addition. As our example only exists of three elements we describe the structure of the group using a Cayley table.</p>
 
         <div>
-        Below is the Cayley table of the group (Integers MOD 3, +)
+        <p class="main-text">Below is the Cayley table of the group (Integers MOD 3, +)</p>
         <table class="Cayley-table">
             <tr>
                 <th>+</th>
@@ -137,7 +137,7 @@
             </tr>
         </table>
 
-        <p>Now some simple question: (not written the JavaScript for this yet)</p>
+        <p class="main-text">Now some simple question: (not written the JavaScript for this yet)</p>
         <form method="get">
             <fieldset class="multi-choice">
                 <legend>What is the inverse element of 0 (MOD 3)?</legend>
@@ -152,7 +152,7 @@
         
     </section>    
 
-    <p>Thank you for reading my webpage! </p>
+    <p class="main-text">Thank you for reading my webpage! </p>
         
     <footer>
         <p>Below are some various places you can find me!</p>
