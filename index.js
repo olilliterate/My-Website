@@ -19,18 +19,23 @@ function checkMultiAnswer(question_num, answer) {
 
 function shrinkNavBar(query) {
     if (query.matches) {
-        nav_ele_0 = document.getElementById("about_nav");
-        nav_ele_1 = document.getElementById("experience_nav");
-        nav_ele_2 = document.getElementById("groups_nav");
+        let nav_ele_0 = document.getElementById("about_nav");   
+        let nav_ele_1 = document.getElementById("experience_nav");
+        let nav_ele_2 = document.getElementById("groups_nav");
         nav_ele_0.innerHTML = "About";
         nav_ele_1.innerHTML = "Experience";
         nav_ele_2.innerHTML = "Groups";
+    }
+    else{
+        let nav_ele_0 = document.getElementById("about_nav");
+        let nav_ele_1 = document.getElementById("experience_nav");
+        let nav_ele_2 = document.getElementById("groups_nav");
+        nav_ele_0.innerHTML = "About Me";
+        nav_ele_1.innerHTML = "My Education And Experience";
+        nav_ele_2.innerHTML = "A Short Look At Groups";
     }
 
 }
 
 const mmObj = window.matchMedia("(max-width: 600px)");
-
-shrinkNavBar(mmObj);
-
 mmObj.addEventListener("change", () => shrinkNavBar(mmObj));
