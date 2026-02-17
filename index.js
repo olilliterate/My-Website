@@ -44,5 +44,5 @@ function shrinkNavBar(query) {
 
 const mmObj = window.matchMedia("(max-width: 600px)");
 
-shrinkNavBar(mmObj);
+document.addEventListener("DOMContentLoaded", () => shrinkNavBar(mmObj));
 mmObj.addEventListener("change", () => shrinkNavBar(mmObj));
