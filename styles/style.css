@@ -140,6 +140,10 @@ fieldset.multi-choice legend, fieldset.multi-choice label, fieldset.multi-choice
   padding: 10px;
 }
 
+.answer-message {
+  display: none;
+}
+
 /*Footer styles*/
 
 footer {

@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en-uk">
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <script src="index.js"></script>
         <link href="styles/style.css" rel="stylesheet">
         <title>Oliver Bjergfelt</title>
         <link rel="icon" type="image/x-icon" href="images/favicon.ico"/>   
@@ -14,9 +15,9 @@
     <header>
         <nav>
             <ul class="menu">
-                <li><a href="index.html#hello">About Me</a></li>
-                <li><a href="index.html#experience">My Education And Experience</a></li>
-                <li><a href="index.html#groups">A Short Look At Groups</a></li>
+                <li><a id="about_nav" href="index.html#hello">About Me</a></li>
+                <li><a id="experience_nav" href="index.html#experience">My Education And Experience</a></li>
+                <li><a id="groups_nav"href="index.html#groups">A Short Look At Groups</a></li>
             </ul>
         </nav>
         <h1 class="main-text">Welcome to my website 😊</h1>
@@ -137,14 +138,15 @@
             </tr>
         </table>
 
-        <p class="main-text">Now some simple question: (not written the JavaScript for this yet)</p>
-        <form method="get">
-            <fieldset class="multi-choice">
+        <p class="main-text">Now a simple question:</p>
+        <form>
+            <fieldset class="multi-choice" id="first-question">
                 <legend>What is the inverse element of 0 (MOD 3)?</legend>
-                <label><input type="radio" name="radio" value="0">0 (MOD 3)</label>
-                <label><input type="radio" name="radio" value="1">1 (MOD 3)</label>
-                <label><input type="radio" name="radio" value="2">2 (MOD 3)</label>
-                <button>Submit</button>
+                <label><input type="radio" name="first" value="0">0 (MOD 3)</label>
+                <label><input type="radio" name="first" value="1">1 (MOD 3)</label>
+                <label><input type="radio" name="first" value="2">2 (MOD 3)</label>
+                <button type="button" onclick="checkMultiAnswer('first', '0')">Submit</button>
+                <p class="answer-message" id="first-answer"></p>
             </fieldset>
 
         </form>
