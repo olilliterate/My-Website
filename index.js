@@ -27,15 +27,13 @@ function shrinkNavBar(query) {
         nav_ele_2.innerHTML = "Groups";
     }
     else{
-        //Here we need to check if the webpage has been written
-        if (document.getElementById("about_nav")) {
-            let nav_ele_0 = document.getElementById("about_nav");
-            let nav_ele_1 = document.getElementById("experience_nav");
-            let nav_ele_2 = document.getElementById("groups_nav");
-            nav_ele_0.innerHTML = "About Me";
-            nav_ele_1.innerHTML = "My Education And Experience";
-            nav_ele_2.innerHTML = "A Short Look At Groups";
-        }
+
+        let nav_ele_0 = document.getElementById("about_nav");
+        let nav_ele_1 = document.getElementById("experience_nav");
+        let nav_ele_2 = document.getElementById("groups_nav");
+        nav_ele_0.innerHTML = "About Me";
+        nav_ele_1.innerHTML = "My Education And Experience";
+        nav_ele_2.innerHTML = "A Short Look At Groups";
         
     }
 

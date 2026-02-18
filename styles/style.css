@@ -4,7 +4,10 @@
 }
 
 
-
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 50px;
+}
 
 body{
   max-width: 1000px;
@@ -12,6 +15,7 @@ body{
   background-color: #F2F4F3;
   color: #0A0908;
   font-size: large;
+  
 }
 
 header h1{
@@ -75,7 +79,7 @@ nav a:hover{
   display: flow-root;
 }
 
-.Mission-statement .image {
+.Mission-statement-content .image {
   float: right;
 }
 
@@ -178,14 +182,14 @@ div.socials a{
     margin-right: 8px;
   }
 
-  section.Mission-statement {
+  div.Mission-statement-content {
     display: flex;
     flex-flow: column;
     align-items: center;
   }
 
   header h1{
-    padding-top: 70px;
+    padding-top: 40px;
   }
 
 }
